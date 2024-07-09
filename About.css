@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+.about-us{
+    width: 100%;
+}
+
+.about-us h1{
+    text-align: center;
+    font-size: 40px;
+    color: #2b9ec2;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+}

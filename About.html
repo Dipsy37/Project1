@@ -1,82 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 10px;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .about-section {
-            margin-bottom: 20px;
-        }
-        .about-section h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .about-section p {
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <link rel="stylesheet" href="Navbar.css">
+
+ 
 </head>
 <body>
-    <header>
-        <h1>About Us</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="about-section">
-            <h2>Our Story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mauris id eros condimentum posuere. Integer euismod turpis ac urna ultricies dictum. Phasellus et ligula at quam commodo placerat. Sed in lacinia odio. Phasellus lobortis leo ac fermentum hendrerit. Ut fringilla neque nec posuere lobortis. Fusce in cursus libero, ac dapibus velit. Vivamus malesuada, lacus vel tincidunt posuere, lacus nulla commodo orci, sed ultricies lorem ipsum vel ligula.</p>
+
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a target="_blank" href="About.html">ABOUT</a></li>
+      <li><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
+      <li><a target="_blank" href="Skincare.html">SKINCARE</a></li>
+      <li><a target="_blank" href="Contacts.html">CONTACTS</a></li>
+    </ul>
+
+    <ul>
+      <li class="hideOnMobile"><a target="_blank" href="index.html">BelleBeauty</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="About.html">ABOUT</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Skincare.html">SKINCARE</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="Contacts.html">CONTACTS</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
+    </ul>
+  </nav>
+
+  <!--responsive js for the navbar-->
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+  <section>
+    <div class="about-us">
+      <h1>About Us</h1>
+      <div class="wrapper">
+        <div class="content">
+          <h3>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio numquam vel facere cupiditate blanditiis dignissimos laboriosam, quidem, dolore pariatur quas esse natus unde similique! Quisquam fugiat nisi culpa a reiciendis! 
+          </h3>
+          <div class="button">
+            <a href="">Read More</a>
+          </div>
+          <div class="social">
+            <a href=""><i class ="fab fa-twitter"></i></a>
+            <a href=""><i class ="fab fa-instagram"></i></a>
+
+          </div>
         </div>
-        <div class="about-section">
-            <h2>Our Mission</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum posuere dui, vel aliquet velit vulputate nec. Curabitur fermentum, augue ut eleifend malesuada, sapien arcu efficitur augue, et efficitur velit ligula et justo. Nunc dapibus, magna vitae hendrerit suscipit, leo eros sagittis libero, sed cursus augue libero vel elit.</p>
+
+        <div class="image-section">
+          <img src="Images/Knc BEAUTY.webp">
         </div>
+
+      </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Skincare Products Store. All rights reserved.</p>
-    </footer>
+  </section>
+
+
 </body>
 </html>
