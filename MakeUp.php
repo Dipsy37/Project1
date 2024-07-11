@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
 
-  <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="CSS/Navbar.css">
   <link rel="stylesheet" href="CSS/MakeUp.css">
 
 
@@ -14,23 +14,23 @@
 </head>
 <body>
 
-  <nav>
+<nav>
     <ul class="sidebar">
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-      <li><a target="_blank" href="About.html">ABOUT</a></li>
-      <li><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
-      <li><a target="_blank" href="Skincare.html">SKINCARE</a></li>
-      <li><a target="_blank" href="Reviews & Testimonies.html">TESTIMONIES</a></li>
-      <li><a target="_blank" href="Contacts.html">CONTACTS</a></li>
+      <li><a target="_blank" href="About.php">ABOUT</a></li>
+      <li><a target="_blank" href="MakeUp.php">MAKE-UP</a></li>
+      <li><a target="_blank" href="Skincare.php">SKINCARE</a></li>
+      <li><a target="_blank" href="Reviews & Testimonies.php">TESTIMONIES</a></li>
+      <li><a target="_blank" href="Contacts.php">CONTACTS</a></li>
     </ul>
 
     <ul>
-      <li class="hideOnMobile"><a target="_blank" href="index.html">BelleBeauty</a></li>
-      <li class="hideOnMobile"><a target="_blank" href="About.html">ABOUT</a></li>
-      <li class="hideOnMobile"><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
-      <li class="hideOnMobile" ><a target="_blank"href="Skincare.html">SKINCARE</a></li>
-      <li class="hideOnMobile" ><a target="_blank"href="Reviews & Testimonies.html">TESTIMONIES</a></li>
-      <li class="hideOnMobile"><a target="_blank" href="Contacts.html">CONTACTS</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="index.php">BelleBeauty</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="About.php">ABOUT</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="MakeUp.php">MAKE-UP</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Skincare.php">SKINCARE</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Reviews & Testimonies.php">TESTIMONIES</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="Contacts.php">CONTACTS</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
     </ul>
   </nav>

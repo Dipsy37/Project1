@@ -12,26 +12,27 @@
  
 </head>
 <body>
-  <?php
-  echo'<nav>
-    echo'<ul class="sidebar">
-      echo'<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-      echo'<li><a target="_blank" href="About.html">ABOUT</a></li>
-      echo'<li><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
-      echo'<li><a target="_blank" href="Skincare.html">SKINCARE</a></li>
-      echo'<li><a target="_blank" href="Contacts.html">CONTACTS</a></li>
-      echo'</ul>
+  
+<nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a target="_blank" href="About.php">ABOUT</a></li>
+      <li><a target="_blank" href="MakeUp.php">MAKE-UP</a></li>
+      <li><a target="_blank" href="Skincare.php">SKINCARE</a></li>
+      <li><a target="_blank" href="Reviews & Testimonies.php">TESTIMONIES</a></li>
+      <li><a target="_blank" href="Contacts.php">CONTACTS</a></li>
+    </ul>
 
-      echo'<ul>
-        echo'<li class="hideOnMobile"><a target="_blank" href="index.html">BelleBeauty</a></li>
-        echo'<li class="hideOnMobile"><a target="_blank" href="About.html">ABOUT</a></li>
-        echo'<li class="hideOnMobile"><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
-        echo'<li class="hideOnMobile" ><a target="_blank"href="Skincare.html">SKINCARE</a></li>
-        echo'<li class="hideOnMobile"><a target="_blank" href="Reviews & Testimonies.html">TESTIMONIES</a></li>
-        echo'<li class="hideOnMobile"><a target="_blank" href="Contacts.html">CONTACTS</a></li>
-        echo'<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
-        echo'</ul>
-        echo'</nav>
+    <ul>
+      <li class="hideOnMobile"><a target="_blank" href="index.php">BelleBeauty</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="About.php">ABOUT</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="MakeUp.php">MAKE-UP</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Skincare.php">SKINCARE</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Reviews & Testimonies.php">TESTIMONIES</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="Contacts.php">CONTACTS</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
+    </ul>
+  </nav>
 
   <!--responsive js for the navbar-->
   <script>
@@ -95,7 +96,6 @@
   </div>
 </footer>
 
-?>
  
 </body>
 </html>
