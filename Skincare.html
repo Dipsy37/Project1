@@ -4,128 +4,152 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skincare</title>
-</head>
+  <title>About</title>
 
-<!--font awesome cdn link-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="CSS/Skincare.css">
 
- <link rel="stylesheet" href="ResponsiveProductCard.css">
-
- <!--custom js file link-->
- <script src="script.js" defer></script>
-<body>
-
-  <div class="container">
-    <h3 class="title">Skincare</h3>
-  
-  <div class="products-container">
-  
-    <div class="product" data-name="Centella-1">
-      <img src="Images\Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen.jpeg" alt="">
-      <h3>Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen</h3>
-      <div class="price">Ksh 1170</div>
-    </div>
-
-    <div class="product" data-name="Centella-2">
-    <img src="Images\Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen.jpeg" alt="">
-    <h3>Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen</h3>
-    <div class="price">Ksh 1170</div>
-  </div>
-
-  <div class="product" data-name="Centella-3">
-    <img src="Images\Madagascar Centella Ampoule.jpeg" alt="">
-    <h3>Madagascar Centella Ampoule</h3>
-    <div class="price">Ksh 2000</div>
-  </div>
-
-  <div class="product" data-name="Centella-4">
-    <img src="Images\Madagascar Centella Ampoule.jpeg" alt="">
-    <h3>Madagascar Centella Ampoule</h3>
-    <div class="price">Ksh 2000</div>
-  </div>
-
-</div>
-
-</div> 
-
-<div class="products-preview">
-
-  <div class="preview" data-target="Centella-1">
-    <img src="Images\Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen.jpeg" alt="">
-    <h3>Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen</h3>
-    <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-    </div>
-    <p>A serum-like chemical sunscreen that is super lightweight, hydrating, and quickly absorbed, with a non-greasy, dewy finish</p>
-    <div class="price">1700</div>
-    <div class="buttons">
-      <a href="" class="cart">ADD TO CART</a>
-    </div>
-  </div>
-
-  <div class="preview" data-target="Centella-2">
-    <img src="Images\Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen.jpeg" alt="">
-    <h3>Twin Pack Madagascar Centella Hyalu-Cica Water-Fit Sunscreen</h3>
-    <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-    </div>
-    <p>A serum-like chemical sunscreen that is super lightweight, hydrating, and quickly absorbed, with a non-greasy, dewy finish</p>
-    <div class="price">1700</div>
-    <div class="buttons">
-      <a href="" class="cart">ADD TO CART</a>
-    </div>
-  </div>
-
-  <div class="preview" data-target="Centella-3">
-    <img src="Images\Madagascar Centella Ampoule.jpeg" alt="">
-    <h3>Madagascar Centella Ampoule</h3>
-    <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-    </div>
-    <p>All rounder ampoule with great qualities for redness and irritation relief, including high quality Madagascan Centella Asiatica extract</p>
-    <div class="price">1700</div>
-    <div class="buttons">
-      <a href="" class="cart">ADD TO CART</a>
-    </div>
-  </div>
-
-  <div class="preview" data-target="Centella-4">
-    <img src="Images\Madagascar Centella Ampoule.jpeg" alt="">
-    <h3>Madagascar Centella Ampoule</h3>
-    <div class="stars">
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star-half-alt"></i>
-      <span>( 250 )</span>
-    </div>
-    <p>All rounder ampoule with great qualities for redness and irritation relief, including high quality Madagascan Centella Asiatica extract</p>
-    <div class="price">1700</div>
-    <div class="buttons">
-      <a href="" class="cart">ADD TO CART</a>
-    </div>
-  </div>
 
  
-</div>
-</div>
+</head>
+<body>
 
-</body>
-</html>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a target="_blank" href="About.html">ABOUT</a></li>
+      <li><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
+      <li><a target="_blank" href="Skincare.html">SKINCARE</a></li>
+      <li><a target="_blank" href="Reviews & Testimonies.html">TESTIMONIES</a></li>
+      <li><a target="_blank" href="Contacts.html">CONTACTS</a></li>
+    </ul>
+
+    <ul>
+      <li class="hideOnMobile"><a target="_blank" href="index.html">BelleBeauty</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="About.html">ABOUT</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Skincare.html">SKINCARE</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Reviews & Testimonies.html">TESTIMONIES</a></li>
+      <li class="hideOnMobile"><a target="_blank" href="Contacts.html">CONTACTS</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
+    </ul>
+  </nav>
+
+  <!--responsive js for the navbar-->
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+  
+
+  
+
+  <section id="hero">
+    <div class="container">
+        <h2>Welcome to SkinCare Store</h2>
+        <p>Discover the perfect skincare products for your skin and beauty needs.</p>
+    </div>
+</section>
+
+<section id="featured-products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="Images/la-roche-posay-anthelios-lightweight-facial-sunscreen-.jpg" alt="Product 1">
+                <h3>Sunscreen</h3>
+                <p>This lightweight 100% mineral face sunscreen with titanium dioxide was developed for sensitive skin </p>
+                <span class="price">$19.99</span>
+                
+            </div>
+            <div class="product">
+                <img src="Images/LaRochePosay-Product-Toleriane-Toleriane-Purifying-foaming-cleanser.jpg" alt="Product 2">
+                <h3>Cleanser</h3>
+                <p>Toleriane Purifying Foaming Facial Cleanser is a daily face wash for normal to oily, sensitive skin</p>
+                <span class="price">$29.99</span>
+                
+            </div>
+            <div class="product">
+                <img src="Images/01_LaRochePosay_Cicaplast-UV_front-shadow.jpg" alt="Product 3">
+                <h3>Matte Foundation</h3>
+                <p>Cicaplast Balm B5 UV is a soothing therapeutic multi-purpose cream with broad spectrum SPF 50.</p>
+                <span class="price">$34.99</span>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="latest-offers">
+    <div class="container">
+        <h2>Latest Offers</h2>
+        <div class="offer-grid">
+            <div class="offer">
+                <img src="Images/3337875583626-1_Glycolic-B5_30ml.jpg" alt="Offer 1">
+                <div class="offer-details">
+                    <h3>Summer Sale</h3>
+                    <p>This anti-aging ultra hydrating pure hyaluronic acid face and neck serum leaves skin feeling plump </p>
+                    
+                </div>
+            </div>
+            <div class="offer">
+                <img src="Images/1_Toleriane_DblRepairMoisturizer_Tube.jpg" alt="Offer 2">
+                <div class="offer-details">
+                    <h3>Free Shipping</h3>
+                    <p>Toleriane Double Repair Face Moisturizer is formulated with dermatologist-recommended ingredients.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="order">
+    <div class="container">
+        <h2>Place Your Order</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="product">Select Product</label>
+                <select id="product" name="product" required>
+                    <option value="">Select...</option>
+                    <option value="Cleanser">LaRochePosay-Product-Toleriane-Toleriane-Purifying-foaming-cleanser</option>
+                    <option value="Moisturizer">LaRochePosay_Cicaplast-UV_front-shadow</option>
+                    <option value="Sunscreen">la-roche-posay-anthelios-lightweight-facial-sunscreen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Notes</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 SkinCare Store. All rights reserved.</p>
+    </div>
+</footer>
+
+  </body>
+  </html>

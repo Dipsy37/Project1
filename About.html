@@ -7,17 +7,20 @@
   <title>About</title>
 
   <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="CSS/About.css">
 
  
 </head>
 <body>
-
+  
+  
   <nav>
     <ul class="sidebar">
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
       <li><a target="_blank" href="About.html">ABOUT</a></li>
       <li><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
       <li><a target="_blank" href="Skincare.html">SKINCARE</a></li>
+      <li><a target="_blank" href="Reviews & Testimonies.html">TESTIMONIES</a></li>
       <li><a target="_blank" href="Contacts.html">CONTACTS</a></li>
     </ul>
 
@@ -26,12 +29,14 @@
       <li class="hideOnMobile"><a target="_blank" href="About.html">ABOUT</a></li>
       <li class="hideOnMobile"><a target="_blank" href="MakeUp.html">MAKE-UP</a></li>
       <li class="hideOnMobile" ><a target="_blank"href="Skincare.html">SKINCARE</a></li>
+      <li class="hideOnMobile" ><a target="_blank"href="Reviews & Testimonies.html">TESTIMONIES</a></li>
       <li class="hideOnMobile"><a target="_blank" href="Contacts.html">CONTACTS</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg></a></li>
     </ul>
   </nav>
 
-  <!--responsive js for the navbar-->
+  
+ <!--responsive js for the navbar-->
   <script>
     function showSidebar(){
       const sidebar = document.querySelector('.sidebar')
@@ -43,32 +48,20 @@
     }
   </script>
 
-  <section>
-    <div class="about-us">
+<div class="about-section">
+  <div class="photo-section">
+      <img src="Images/Neutral Beige Simple Aesthetic Flower Boutique Logo.png" alt="About Photo">
+  </div>
+  <div class="text-section">
       <h1>About Us</h1>
-      <div class="wrapper">
-        <div class="content">
-          <h3>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio numquam vel facere cupiditate blanditiis dignissimos laboriosam, quidem, dolore pariatur quas esse natus unde similique! Quisquam fugiat nisi culpa a reiciendis! 
-          </h3>
-          <div class="button">
-            <a href="">Read More</a>
-          </div>
-          <div class="social">
-            <a href=""><i class ="fab fa-twitter"></i></a>
-            <a href=""><i class ="fab fa-instagram"></i></a>
-
-          </div>
-        </div>
-
-        <div class="image-section">
-          <img src="Images/Knc BEAUTY.webp">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+      <p>Welcome to BelleBeauty, where we believe that healthy, radiant skin is the foundation of confidence and beauty. 
+        Our journey began with a simple yet profound mission: to provide high-quality, effective, and safe skincare products that cater to the unique needs of every individual.
+        Our team of experts, including dermatologists, chemists, and skincare enthusiasts, works tirelessly to develop products that are not only innovative but also backed by the latest research and technology. 
+        Thank you for choosing BelleBeauty. 
+        Here's to a brighter, more radiant you!!
+      </p>
+  </div>
+</div>
 
 </body>
 </html>

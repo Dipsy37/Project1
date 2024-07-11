@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #9A7B78;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.testimony {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 45%;
+}
+
+.testimony-content {
+    text-align: center;
+}
+
+.testimony p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.testimony h3 {
+    margin-top: 20px;
+    font-style: italic;
+    color: #a5b9bb;
+}
+
