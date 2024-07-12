@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Skincare</title>
 
   <link rel="stylesheet" href="CSS/Navbar.css">
   <link rel="stylesheet" href="CSS/Skincare.css">
@@ -111,39 +111,7 @@
     </div>
 </section>
 
-<section id="order">
-    <div class="container">
-        <h2>Place Your Order</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="product">Select Product</label>
-                <select id="product" name="product" required>
-                    <option value="">Select...</option>
-                    <option value="Cleanser">LaRochePosay-Product-Toleriane-Toleriane-Purifying-foaming-cleanser</option>
-                    <option value="Moisturizer">LaRochePosay_Cicaplast-UV_front-shadow</option>
-                    <option value="Sunscreen">la-roche-posay-anthelios-lightweight-facial-sunscreen</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" name="quantity" min="1" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Additional Notes</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn">Place Order</button>
-        </form>
-    </div>
-</section>
+
 
 <footer>
     <div class="container">

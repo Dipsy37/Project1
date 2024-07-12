@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>MakeUp</title>
 
   <link rel="stylesheet" href="CSS/Navbar.css">
   <link rel="stylesheet" href="CSS/MakeUp.css">
@@ -144,6 +144,36 @@
         </form>
     </div>
 </section>
+
+<?php
+    require 'Connection.php';
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (isset($_POST["name"], $_POST["email"], $_POST["product"],$_POST["quantity"],$_POST["message"])) {
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $product = $_POST["product"];
+            $quantity= $_POST["quantity"];
+            $message = $_POST["message"];
+            
+
+            $duplicate = mysqli_query($conn, "SELECT * FROM MakeUp WHERE name='$name'");
+
+            if (mysqli_num_rows($duplicate) > 0) {
+                echo "<script>alert('Check in date is  full!');</script>";
+            } else {
+                $query = "INSERT INTO MakeUp(name, email, product, quantity, message) VALUES ('$name', '$email', '$product', '$quantity', '$message')";
+                mysqli_query($conn, $query);
+                echo "<script>alert('Submission Successful');</script>";
+            }
+        }
+    }
+?>
+
+
+
+
+
+
 
 <footer>
     <div class="container">

@@ -13,6 +13,8 @@
       crossorigin="anonymous">
     </script>
     
+    
+    
   </head>
   <body>
   <nav>
@@ -100,7 +102,7 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html" autocomplete="off">
+          <form action="" method="post">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -122,13 +124,41 @@
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" value="Send" class="btn" />
+            <button type="submit" class=" Send">Send</button>
+            
           </form>
         </div>
       </div>
     </div>
+  
 
-    <script src="Contact.js"></script>
+
+    <?php
+    require 'Connection.php';
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (isset($_POST["name"], $_POST["email"], $_POST["phone"],$_POST["message"])) {
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $phone = $_POST["phone"];
+            $message = $_POST["message"];
+            
+
+            $duplicate = mysqli_query($conn, "SELECT * FROM contacts WHERE name='$name'");
+
+            if (mysqli_num_rows($duplicate) > 0) {
+                echo "<script>alert('Check in date is  full!');</script>";
+            } else {
+                $query = "INSERT INTO contacts(name, email, phone, message) VALUES ('$name', '$email', '$phone', '$message')";
+                mysqli_query($conn, $query);
+                echo "<script>alert('Submission Successful');</script>";
+            }
+        }
+    }
+?>
+
+<script src="Contact.js"></script>
+
+    
   </body>
 </html>
 
