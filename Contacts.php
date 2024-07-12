@@ -146,7 +146,7 @@
             $duplicate = mysqli_query($conn, "SELECT * FROM contacts WHERE name='$name'");
 
             if (mysqli_num_rows($duplicate) > 0) {
-                echo "<script>alert('Check in date is  full!');</script>";
+                echo "<script>alert('Error!');</script>";
             } else {
                 $query = "INSERT INTO contacts(name, email, phone, message) VALUES ('$name', '$email', '$phone', '$message')";
                 mysqli_query($conn, $query);

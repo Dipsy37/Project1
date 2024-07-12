@@ -159,7 +159,7 @@
             $duplicate = mysqli_query($conn, "SELECT * FROM MakeUp WHERE name='$name'");
 
             if (mysqli_num_rows($duplicate) > 0) {
-                echo "<script>alert('Check in date is  full!');</script>";
+                echo "<script>alert('Error!');</script>";
             } else {
                 $query = "INSERT INTO MakeUp(name, email, product, quantity, message) VALUES ('$name', '$email', '$product', '$quantity', '$message')";
                 mysqli_query($conn, $query);
